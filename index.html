@@ -10,13 +10,31 @@
 	<div class="background">
 		<div class="todo_container">
 			<table id='todoItems_ul' cellspacing="0" cellpadding="0">
+				<tr class="todoItem">
+					<td class="todoText"><strong>Todo</strong></td>
+					<td class="todoTag"><strong>Tag</strong></td>
+					<td><strong>Edit</strong></td>
+				</tr>
 			</table>
 		</div>
 		<div class="add">
-			<form action="#" onsubmit="addItem();return false">
+			<form action="#" class="addForm" onsubmit="addItem();return false">
 				<input type="text" class="add_input"  id="addInput" placeholder="Enter new ToDo item." autofocus>
 				<input type="submit" id="addItemBtn" value="">
 			</form>
+			<div class="selector">
+				<label for="selector" class="selector_label"></label>
+					Select tag:
+					<select name="selector" id="" class="selectors" onchange="sortItems()">
+						<option value="Main" class="options">Main</option>
+						<option value="Red" class="options">Red</option>
+						<option value="Yellow" class="options">Yellow</option>
+						<option value="Blue" class="options">Blue</option>
+						<option value="Orange" class="options">Orange</option>
+						<option value="Done" class="options">Done</option>
+					</select>
+				</label>
+			</div>
 		</div>
 	</div>
 </body>

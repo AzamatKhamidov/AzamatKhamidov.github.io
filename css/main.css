@@ -3,6 +3,8 @@
 * {
 	padding: 0;
 	margin: 0;
+	font-family: 'Arvo', serif;
+	font-size: 1em;
 }
 
 form {
@@ -29,7 +31,8 @@ li {
     border: none;
     cursor:pointer;
     overflow: hidden;
-    outline:none;
+	outline:none;
+	margin-top: 5vh;	
 	background-color: Transparent;
 	background-image: url('../icons/chevron-arrow-up.png');
 	background-repeat: no-repeat;
@@ -58,9 +61,22 @@ table {
 	overflow: auto;
 	padding-top: 2vh;
 	padding-bottom: 2vh;
-	max-width: 40vw;
+	max-width: 20vw;
+	min-width: 20vw;
 	height: auto;
 }
+
+.todoTag {
+	text-align: center;
+	width: 20vh;
+}
+
+.todoImg {
+	float: right;
+	width: 20vh;
+	margin-right: 1vw;
+}
+
 .todo_img {
 	float: right;
 	width: 3vh;
@@ -159,18 +175,35 @@ table {
 	border-top-width: 0px;
 	border-left-width: 0px;
 	border-bottom: 5px, solid;
-	margin-top: 1vh;
+	margin-top: 5vh;
 	width: 80vw;
 	height: 5vh;
 	font-family: 'Arvo', serif;
 	font-size: 15px;
   }
   
+.selector {
+	margin-top: 3vh;
+	font-family: 'Arvo', serif;
+	font-size: 15px;
+}
+
+
+
+
 .add_input:focus {
 	outline: none;
 	border-color: #0096ff;
 }
 
+.selectors {
+	text-align: right;
+	float: right;
+	width: 20vw;
+}
+.select_tag {
+	flex-grow:2;	
+}
   
 
 .background {
